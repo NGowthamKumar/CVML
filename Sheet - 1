@@ -1,0 +1,20 @@
+# task 1
+text = " Hello world ."
+print(text)
+
+# task 3
+# error code
+# team = [ "Paddy" , "Linda" , "Steve" , "Flo" ]
+# teamSize = len ( team )
+# print ( team [0] + ".." + team [ teamSize])
+
+# corrected code
+team = ["Paddy", "Linda", "Steve", "Flo"]
+teamSize = len(team)
+print(team[0] + ".." + team[teamSize - 1])
+
+# or
+
+team = ["Paddy", "Linda", "Steve", "Flo"]
+teamSize = len(team) - 1
+print(team[0] + ".." + team[teamSize])
