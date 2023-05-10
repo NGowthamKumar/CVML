@@ -1,0 +1,28 @@
+import math
+import numpy as np
+
+
+class Vec2:
+    id = 0
+    global gid
+
+    def __init__(self, x, y):
+        self.gid = id(self)
+        self.x = x
+        self.y = y
+        print("Unique Id for this Class Instance :", self.gid)
+
+    def length(self):
+        sqr = ((self.x) ** 2) + ((self.y) ** 2)
+        print("The Euclidean length of the vector =", math.sqrt(sqr))
+
+    def add(self, rhs):
+        vector1 = np.array([self.x, self.y])
+        vector2 = np.array([rhs.x, rhs.y])
+        return vector1 + vector2
+
+
+vector1 = Vec2(2, 3)
+vector2 = Vec2(1, 2)
+Vec2.length(vector1)
+print("The Addition of the two vectors =", Vec2.add(vector1, vector2))
